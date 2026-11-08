@@ -1,0 +1,16 @@
+source "https://rubygems.org"
+
+# Force a modern Jekyll engine that can natively compile on Ruby 4.0+
+gem "jekyll", "~> 4.4.1"
+
+# The layout and tracking feeds you have active
+gem "minima", "~> 2.5"
+
+group :jekyll_plugins do
+  gem "jekyll-feed", "~> 0.12"
+  gem "jekyll-remote-theme"
+end
+
+# Strict requirement overrides for modern Ruby installations
+gem "csv"
+gem "webrick"
